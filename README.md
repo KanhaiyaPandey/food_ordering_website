@@ -29,4 +29,10 @@ Ignited my app. Do npx parcel <entry point>.
 The parcel is not alone for these crazy  stuffs there are many thing behind he scene and they have there own dependencies to something. This thing called Transitive Dependency.
 
 
+///////////////////////////////////////////////////////// on third session ////////////////////////////////
+learn about 
+
+Babel and its functions, JSX , React component, Funcyion component and Composistion of component.
+
+
 
