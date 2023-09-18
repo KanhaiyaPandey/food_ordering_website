@@ -20,3 +20,13 @@ And I am excited to learn more.........................
 
 
 
+//////////////////////////////////////////////////////////////// on second session ////////////////////////////////////////////////////////////
+
+
+installed npm, React, ReactDOM, Parcel for minifications and Optimization.
+Learned about how parcel do all the crazy stuffs in just few seconds and why bundlers are so important because React is fast because of the help of these bundlers.
+Ignited my app. Do npx parcel <entry point>.
+The parcel is not alone for these crazy  stuffs there are many thing behind he scene and they have there own dependencies to something. This thing called Transitive Dependency.
+
+
+
