@@ -31,4 +31,10 @@ The parcel is not alone for these crazy  stuffs there are many thing behind he s
 Added gpg verification.git 
 
 
+///////////////////////////////////////////////////////// on third session ////////////////////////////////
+learn about 
+
+Babel and its functions, JSX , React component, Funcyion component and Composistion of component.
+
+
 
