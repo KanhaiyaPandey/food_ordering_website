@@ -1,4 +1,48 @@
-#container{
-  background-color: #4F709C;
-  color: antiquewhite;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #545151;
+  color: white;
+}
+
+.logo, .userIcon {
+  flex: 0.1;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+.searchBar {
+  flex: 0.6;
+  text-align: center;
+}
+
+.header__searchInput {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline-width: 0;
+}
+
+.userIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__userIcon {
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
 }

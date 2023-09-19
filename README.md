@@ -28,5 +28,7 @@ Learned about how parcel do all the crazy stuffs in just few seconds and why bun
 Ignited my app. Do npx parcel <entry point>.
 The parcel is not alone for these crazy  stuffs there are many thing behind he scene and they have there own dependencies to something. This thing called Transitive Dependency.
 
+Added gpg verification.git 
+
 
 
