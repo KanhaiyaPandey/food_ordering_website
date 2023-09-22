@@ -45,8 +45,7 @@ const Body = () => {
            < RestaurantCard {...restaurant.info} key = {restaurant.info.id} />
            </div>
           );
-        }
-  
+           }
         )};
         </div>
       </div>
