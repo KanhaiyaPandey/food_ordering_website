@@ -14,11 +14,12 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* header */
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 1rem;
   background-color: white;
   color: black;
 }
@@ -26,6 +27,7 @@ h3 {
   list-style-type: none;
   display: flex;
   cursor: pointer;
+   padding-top: 1.2rem
 }
 
 .nav-items > ul > li {
@@ -35,6 +37,14 @@ h3 {
 .logo{
   width: 100px;
 }
+
+/***************search bar****************** */
+
+.search-container{
+  padding: 3rem;
+}
+
+/***********************cards******************/
 
 .card{
   width: 300px;
