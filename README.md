@@ -36,5 +36,10 @@ learn about
 
 Babel and its functions, JSX , React component, Funcyion component and Composistion of component.
 
+////////////// FIFTH LESSON ////////////////
+
+Builded a simple food ordering site by using static data initally and render all the restuerants there ratings and other details. learned about passing props and
+how to destructure the data and use ..."example" mathod to and Arrays.map function.
+
 
 
