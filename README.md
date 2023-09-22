@@ -41,5 +41,9 @@ Babel and its functions, JSX , React component, Funcyion component and Composist
 Builded a simple food ordering site by using static data initally and render all the restuerants there ratings and other details. learned about passing props and
 how to destructure the data and use ..."example" mathod to and Arrays.map function.
 
+////////////// Sixth Lesson /////////////////////////
+
+learned About State variable and Hooks and useState function  builded a search bar useing that .
+
 
 
