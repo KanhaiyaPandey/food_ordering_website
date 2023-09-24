@@ -86,3 +86,4 @@ export const restaurantList = [
   }
   
   ];
+  // https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.8045665&lng=86.2028754&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING

@@ -7,7 +7,7 @@ import { IMG_CDN_URL } from "../config";
     cuisines,
     cloudinaryImageId,
     areaName,
-    rating
+    avgRating
   }) =>{
   
     return(
@@ -16,7 +16,7 @@ import { IMG_CDN_URL } from "../config";
   
         </img>
         <h5 className="card-title">{name}</h5>
-        <h5 className="card-rating"><i className="rating-icon fa-regular fa-star fa-2xs"></i>{rating}</h5>
+        <h5 className="card-rating"><i className="rating-icon fa-regular fa-star fa-2xs"></i>{avgRating}</h5>
        <p className="card-text">{cuisines. join(", ")}</p>
        <p className="card-text">{areaName}</p>
       </div>
