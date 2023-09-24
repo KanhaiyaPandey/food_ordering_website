@@ -4,22 +4,19 @@ import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
-// State - local react variable
-// useState  - return a array . first item is the name and the secound variable is the setSearchText.
-// Hooks - just a function
 
 function filterData(searchText, restaurants){
     return  restaurants.filter((restaurant)=> restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()))
 }
 
 const Body = () => {
-  // const searchvar = userState
+
   const [allRestaurants, setAllRestaurants] = useState([]);
  const [FilteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   
 useEffect(()=>{
-  // API call
+
   getRestaurants();
 }, []);
 
@@ -36,7 +33,7 @@ async function getRestaurants(){
   }
 }
 
-    return (FilteredRestaurants.length === 0)? <Shimmer/>  :  (
+    return  (FilteredRestaurants.length===0)? <Shimmer/> :(
       <div className="container">
         <div className="search-container">
             <input type="text" className="search-input" placeholder="Search"
@@ -45,24 +42,23 @@ async function getRestaurants(){
               setSearchText(e.target.value);
             }}
             ></input>
-            <button className="btn btn-primary srarch-btn" 
+            <button className="btn btn-primary search-btn" 
               onClick={() =>{
 
-                // need to filter the data
                const data = filterData(searchText,allRestaurants);
-                // update the state with filter data
+
                 setFilteredRestaurants(data);
 
               }}
 
-            > Search</button>
+            > <i className="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
 
       <div className="row restaurant-list">
         {FilteredRestaurants.map((restaurant) => {
           return(
-            <div className="col-3">
+            <div className="col-3 list">
            < RestaurantCard {...restaurant.info} key = {restaurant.info.id} />
            </div>
           );

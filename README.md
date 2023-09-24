@@ -45,5 +45,13 @@ how to destructure the data and use ..."example" mathod to and Arrays.map functi
 
 learned About State variable and Hooks and useState function  builded a search bar useing that .
 
+<!-- Seventh lesson -->
+
+fixed the search feature, learned added Shimmer Effect, learn more about reconsiliation process and diff algo of react
+
+<!-- eight lesson -->
+
+Routers
+
 
 

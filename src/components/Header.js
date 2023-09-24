@@ -16,7 +16,7 @@ const Header = () => {
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-            <li>Cart</li>
+            <li><i className="fa-solid fa-cart-shopping fa-sm"></i></li>
           </ul>
         </div> 
       </div>
