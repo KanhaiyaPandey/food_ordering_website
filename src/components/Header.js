@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
 
 const Title = () => {
     return(
     <img className="logo"
      src={"https://img.freepik.com/premium-photo/3d-restaurant-application-icons_460848-11259.jpg?w=826"}></img>
   );
-  }
+  };
+
+  // SPA - Single Page App.
+  // server-side Routing - in the we are making a network req to the server.
+  // client-Side Routing - in this we dont have to make network request to the server.
 
 const Header = () => {
     return (
@@ -13,9 +18,9 @@ const Header = () => {
 
         <div className="nav-items">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="contact">Contact Us</Link></li>
             <li><i className="fa-solid fa-cart-shopping fa-sm"></i></li>
           </ul>
         </div> 

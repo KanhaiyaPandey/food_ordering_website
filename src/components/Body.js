@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 function filterData(searchText, restaurants){
@@ -33,7 +34,9 @@ async function getRestaurants(){
   }
 }
 
-    return  (FilteredRestaurants.length===0)? <Shimmer/> :(
+ if(!allRestaurants)return null;
+
+    return  (allRestaurants.length===0) ? <Shimmer/> :(
       <div className="container">
         <div className="search-container">
             <input type="text" className="search-input" placeholder="Search"
@@ -58,9 +61,13 @@ async function getRestaurants(){
       <div className="row restaurant-list">
         {FilteredRestaurants.map((restaurant) => {
           return(
-            <div className="col-3 list">
-           < RestaurantCard {...restaurant.info} key = {restaurant.info.id} />
+
+            <div className="col-3 list" key = {restaurant.info.id} >
+              <Link to = {"/resturant/" + restaurant.info.id}>
+              < RestaurantCard {...restaurant.info}  />
+              </Link>
            </div>
+
           );
            }
         )};
