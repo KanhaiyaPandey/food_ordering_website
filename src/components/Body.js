@@ -63,7 +63,7 @@ async function getRestaurants(){
           return(
 
             <div className="col-3 list" key = {restaurant.info.id} >
-              <Link to = {"/resturant/" + restaurant.info.id}>
+              <Link className="link" to = {"/resturant/" + restaurant.info.id}>
               < RestaurantCard {...restaurant.info}  />
               </Link>
            </div>

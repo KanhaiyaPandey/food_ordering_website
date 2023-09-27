@@ -47,11 +47,21 @@ learned About State variable and Hooks and useState function  builded a search b
 
 <!-- Seventh lesson -->
 
-fixed the search feature, learned added Shimmer Effect, learn more about reconsiliation process and diff algo of react
+fixed the search feature, learned added Shimmer Effect, learn more about reconsiliation process and diff algo of react.
 
 <!-- eight lesson -->
 
-Routers
+//////////////Routers///////////////
+
+React-Router-Dom is the package to download react router.
+
+learned about routing.
+
+to config routs we need a function named createBrowserRouter there many other routers too but the is the most recommonded one.
+
+Linkend component and tags with Link tag its a tag come from react router dom package.
+
+children routs should be render inside outlet.
 
 
 
