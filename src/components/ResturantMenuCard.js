@@ -14,9 +14,13 @@ const ResturantMenuCard = ({
     <h6>{"Rs. " + price /100}</h6>
     <p className="menu-description">{description}</p>
     </div>
-    <div className="menu-img">
+    <div className="menu-img-btn">
         <img className="menu-image img-on-top" src={IMG_CDN_URL + imageId}></img>
-        <button className="add-btn"> <i class="fa-solid fa-plus"></i></button>
+     
+        <button className="minus-btn"> - </button>
+        <button className="add-btn"> + </button>
+        
+      
     </div>
  </div>
     );

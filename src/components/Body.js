@@ -1,12 +1,11 @@
 
 import { useEffect, useState } from "react";
-import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
 
-function filterData(searchText, restaurants){
+function filterData(searchText, restaurants) {
     return  restaurants.filter((restaurant)=> restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()))
 }
 
@@ -22,7 +21,7 @@ useEffect(()=>{
 }, []);
 
 
-async function getRestaurants(){
+async function getRestaurants() {
   try{
  const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.8271301&lng=86.1026455&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
   const json = await data.json();
@@ -64,7 +63,7 @@ async function getRestaurants(){
 
             <div className="col-3 list" key = {restaurant.info.id} >
               <Link className="link" to = {"/resturant/" + restaurant.info.id}>
-              < RestaurantCard {...restaurant.info}  />
+              < RestaurantCard {...restaurant.info} />
               </Link>
            </div>
 

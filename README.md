@@ -63,5 +63,16 @@ Linkend component and tags with Link tag its a tag come from react router dom pa
 
 children routs should be render inside outlet.
 
+<!-- class base component -->
+ --> 9th lesson
+
+ class base component is the old way react used upon.
+
+ In CBC we declaire state variable inside constructor method and when the component render the constructor call first before the render.
+
+ We define every state veriable inside that constructor. Its looks more convinent then functional component but it's get messy and complex when we set state.
+
+ learned about mounting updating and unmounting, and lifecycle of react app.
+
 
 
