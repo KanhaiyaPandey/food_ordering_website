@@ -11,7 +11,7 @@ const ResturantMenuCard = ({
  <div className="container container-flex menu">
     <div className="dish-details"> 
     <h5 className="dish-name">{name}</h5>
-    <h6>{"Rs. " + price /100}</h6>
+    <h6><i className="fa-solid fa-indian-rupee-sign"></i>  {price /100}</h6>
     <p className="menu-description">{description}</p>
     </div>
     <div className="menu-img-btn">

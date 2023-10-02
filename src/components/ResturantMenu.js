@@ -1,32 +1,16 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
 import Shimmer from "./Shimmer";
 import ResturantMenuCard from "./ResturantMenuCard";
+import useResturant from "../utils/useRestaurant";
+import useMenu from "../utils/useMenu";
 
 const ResturantMenu = () => {
+
     const {resId} = useParams();
-    const [restaurant, setRestaurant] = useState({});
-    const [menu, setMenu] = useState({});
+   const restaurant = useResturant(resId);
+   const menu = useMenu(resId);
 
-    useEffect(() => {
-    getResturantInfo();
-    }, []);
-
-    async function getResturantInfo (){
-      try{
-          const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.8271301&lng=86.1026455&&submitAction=ENTER&restaurantId="+resId);
-          const json = await data.json();
-          setRestaurant(json?.data?.cards[0]?.card?.card?.info);
-          setMenu(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards);
-        }
-        catch (error) {
-          console.error("Error while fetching or processing data:", error);
-        }
-
-    }
-    
-    return (restaurant.length===0) ? <Shimmer/> : (
+    return (
         <div>
              <div className="container menu-heading">
               <div>

@@ -173,9 +173,8 @@ h3 {
   width:300px;
 }
 .menu-description{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+ 
+ font-size: small;
 }
 .menu-img-btn{
   width: 100px;

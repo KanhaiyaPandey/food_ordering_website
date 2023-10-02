@@ -25,7 +25,7 @@ And I am excited to learn more.........................
 
 installed npm, React, ReactDOM, Parcel for minifications and Optimization.
 Learned about how parcel do all the crazy stuffs in just few seconds and why bundlers are so important because React is fast because of the help of these bundlers.
-Ignited my app. Do npx parcel <entry point>.
+Ignited my app. Do npx parcel <//entry point//>.
 The parcel is not alone for these crazy  stuffs there are many thing behind he scene and they have there own dependencies to something. This thing called Transitive Dependency.
 
 Added gpg verification.git 
@@ -73,6 +73,14 @@ children routs should be render inside outlet.
  We define every state veriable inside that constructor. Its looks more convinent then functional component but it's get messy and complex when we set state.
 
  learned about mounting updating and unmounting, and lifecycle of react app.
+
+ <!-- optimising -->
+
+ builded my own hooks and cleaning the app.
+
+ Chunking, Code Spliting, Dynamic Bundling, Lazy Loading, On Demand Loading, Dynamic Import.
+
+
 
 
 
