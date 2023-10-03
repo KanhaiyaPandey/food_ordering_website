@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
+import { useContext } from "react";
 
 const Title = () => {
     return(

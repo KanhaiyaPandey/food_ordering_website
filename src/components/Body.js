@@ -9,6 +9,7 @@ import useIsOnline from "../utils/useIsOnline";
 
 
 
+
 const Body = () => {
 
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -36,7 +37,7 @@ async function getRestaurants() {
 const isOnline = useIsOnline();
 if(!isOnline){
  return(
-  <h1>Oops !</h1>
+  <h1>Opps!</h1>
  );
 }
 

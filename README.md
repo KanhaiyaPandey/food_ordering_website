@@ -80,6 +80,11 @@ children routs should be render inside outlet.
 
  Chunking, Code Spliting, Dynamic Bundling, Lazy Loading, On Demand Loading, Dynamic Import.
 
+ <!-- Data is the new oil -->
+
+ The concept of passing props from one element ot other then that to other is known as props drilling.
+ 
+
 
 
 

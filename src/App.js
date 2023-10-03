@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -14,6 +14,12 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 
 const AppLayout = () => {
+
+  const [user, setUser] = useState({
+    name: "kanhaiya pandey",
+    email: "kanhaiyapandey2232@gmail.com"
+  })
+
   return (
     <React.Fragment>
      <Header/>
