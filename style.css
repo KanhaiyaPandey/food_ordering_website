@@ -18,6 +18,7 @@ h3 {
 .link{
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 /* header */
@@ -32,7 +33,6 @@ h3 {
 .nav-items > ul{
   list-style-type: none;
   display: flex;
-  cursor: pointer;
    padding-top: 1.2rem
 }
 
@@ -100,19 +100,20 @@ h3 {
 }
 
 .card-text{
-  font-size: medium;
-  font-weight: 300;
+  font-size: small;
+  font-weight: 600;
   padding: none;
+  margin: none;
 }
 
-.card-title, .card-text {
+.card-title {
   white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .rating-icon{
   padding:5px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 800;
   color: green;
 }

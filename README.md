@@ -83,6 +83,10 @@ children routs should be render inside outlet.
  <!-- Data is the new oil -->
 
  The concept of passing props from one element ot other then that to other is known as props drilling.
+
+ We use context from react to avoid props drilling.  It is like a globel hook or variable which can be used everwhre we want to.
+
+ React dev tools.
  
 
 

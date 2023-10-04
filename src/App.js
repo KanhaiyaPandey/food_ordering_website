@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import ResturantMenu from "./components/ResturantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import UserContext from "./utils/UserContext";
 
 
 
@@ -21,10 +22,15 @@ const AppLayout = () => {
   })
 
   return (
+    
     <React.Fragment>
+      <UserContext.Provider value={{
+        user:user
+        }}>
      <Header/>
      <Outlet/>
      <Footer/>
+     </UserContext.Provider>
       </React.Fragment>    
   );
 };

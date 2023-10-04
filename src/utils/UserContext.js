@@ -5,4 +5,7 @@ const UserContext = createContext({
     name:"jojo",
     email:"jojosiro@gmail.com"
 }});
+
+UserContext.displayName= "UserContex";
+
 export default UserContext;
