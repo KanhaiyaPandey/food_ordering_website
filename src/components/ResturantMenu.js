@@ -29,7 +29,7 @@ const ResturantMenu = () => {
           return(
 
             <div className="row menu-list" key={menu?.card?.info?.id} >
-              < ResturantMenuCard {...menu?.card?.info}  />
+              < ResturantMenuCard {...menu?.card}  />
               <hr/>
            </div>
 

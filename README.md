@@ -87,6 +87,19 @@ children routs should be render inside outlet.
  We use context from react to avoid props drilling.  It is like a globel hook or variable which can be used everwhre we want to.
 
  React dev tools.
+
+ <!-- redux toolkit -->
+
+ Bulding the cart section with redux toolkit. It is usefull when we work on production ready apps. 
+
+ redux is a store for our app and there is only one store we just modify its by slice it down as per our need.
+
+ when we do any action redux dispatch an action which calls a reducer function which modify the slice of our store. To subscribe to the store 
+ we need a selector to display or changes. It comes from react-redux library.
+
+ There is a good practice to select specifly the slice not the whole store for good user experence and effiecncy, or it will rerender the whole page whenever we change anything in our store. 
+
+ redux devtool is a good extention to see how redux work behind the scenes.It keeps track every single actions that user make
  
 
 

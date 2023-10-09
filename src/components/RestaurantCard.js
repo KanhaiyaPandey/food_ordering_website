@@ -9,7 +9,7 @@ import UserContext from "../utils/UserContext";
     avgRating
   }) =>{
 
-    const {user}=useContext(UserContext)
+
   
     return(
       <div className="card">
@@ -20,7 +20,6 @@ import UserContext from "../utils/UserContext";
         <h5 className="card-rating"><i className="rating-icon fa-regular fa-star fa-2xs"></i>{avgRating}</h5>
        <p className="card-text">{cuisines. join(", ")}</p>
        <p className="card-text">{areaName}</p>
-       <p>{user.name}</p>
       </div>
     );
      

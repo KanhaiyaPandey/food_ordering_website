@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useContext } from "react";
+import { useSelector } from "react-redux";
 
 const Title = () => {
 
@@ -12,11 +13,13 @@ const Title = () => {
   };
 
   // SPA - Single Page App.
-  // server-side Routing - in the we are making a network req to the server.
+  // server-side Routing - in this we are making a network req to the server.
   // client-Side Routing - in this we dont have to make network request to the server.
 
 const Header = () => {
   const {user} = useContext(UserContext);
+  const cartItems = useSelector(store => store.cart.items);
+  console.log(cartItems);
     return (
       <div className="header">
         {Title()}
@@ -27,8 +30,8 @@ const Header = () => {
             <li><Link className="link" to="/">Home</Link></li>
             <li><Link className="link" to="/about">About Us</Link></li>
             <li><Link className="link" to="contact">Contact Us</Link></li>
-            <li className="link"><i className="fa-solid fa-cart-shopping fa-sm"></i></li>
-            <li className="link"><i class="fa-solid fa-user"></i></li>
+            <li><Link className="link" to="/cart"><i className="fa-solid fa-cart-shopping"></i> - {cartItems.length}</Link></li>
+            <li className="link"><i className="fa-solid fa-user"></i></li>
           </ul>
         </div> 
       </div>
@@ -38,3 +41,4 @@ const Header = () => {
   };
 
   export default Header;
+

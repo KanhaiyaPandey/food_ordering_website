@@ -10,6 +10,9 @@ import Error from "./components/Error";
 import ResturantMenu from "./components/ResturantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+import Cart from "./components/Cart";
 
 
 
@@ -24,6 +27,7 @@ const AppLayout = () => {
   return (
     
     <React.Fragment>
+      <Provider store = {store}>
       <UserContext.Provider value={{
         user:user
         }}>
@@ -31,6 +35,7 @@ const AppLayout = () => {
      <Outlet/>
      <Footer/>
      </UserContext.Provider>
+     </Provider>
       </React.Fragment>    
   );
 };
@@ -56,6 +61,10 @@ const appRouter = createBrowserRouter([
        {
         path: "/resturant/:resId",
         element: <ResturantMenu/>
+       },
+       {
+        path: "/cart",
+        element: <Cart/>
        }
       
     ],

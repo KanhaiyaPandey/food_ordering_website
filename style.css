@@ -220,5 +220,18 @@ h3 {
   width: 80px;
   border-color: black;
 }
+/* cart */
 
+.payment-card{
+  height: 200px;
+  text-align: center;
+ 
 
+}
+.payment-btn{
+  width:80%;
+  margin-top: 60px;
+}
+.secound{
+  width: 100%;
+}
